@@ -1,0 +1,148 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 70vh;
+}
+
+/* LEFT */
+.left {
+  background: var(--copper);
+  padding: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.left::after {
+  content: '';
+  position: absolute;
+  bottom: -5rem;
+  right: -5rem;
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50%;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 2rem;
+}
+
+.intro {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: rgba(245,240,232,0.75);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: rgba(245,240,232,0.8);
+}
+
+.infoIcon {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+/* RIGHT */
+.right {
+  background: var(--dark);
+  padding: 6rem 4rem;
+}
+
+.form {
+  margin-top: 1.5rem;
+}
+
+.group {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--concrete);
+  margin-bottom: 0.5rem;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(184,115,51,0.2);
+  padding: 0.85rem 1rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--cream);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: rgba(154,148,144,0.4);
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--copper);
+}
+
+.textarea {
+  height: 8rem;
+  resize: none;
+}
+
+.submit {
+  width: 100%;
+  background: var(--copper);
+  color: var(--cream);
+  border: none;
+  padding: 1rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  margin-top: 0.5rem;
+}
+
+.submit:hover {
+  background: var(--copper-light);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .contact { grid-template-columns: 1fr; }
+  .left, .right { padding: 4rem 2rem; }
+}

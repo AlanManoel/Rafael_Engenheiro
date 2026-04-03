@@ -1,0 +1,90 @@
+.process {
+  background: var(--dark);
+  padding: 8rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.process::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--copper), var(--rust), var(--copper));
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  font-weight: 900;
+  color: var(--cream);
+  margin-bottom: 5rem;
+  max-width: 40rem;
+}
+
+.title em {
+  font-style: italic;
+  color: var(--copper);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+}
+
+.steps::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  right: 2rem;
+  height: 1px;
+  background: var(--line);
+}
+
+.step {
+  padding: 0 2rem;
+  border-right: 1px solid rgba(184,115,51,0.15);
+}
+
+.step:last-child { border-right: none; }
+.step:first-child { padding-left: 0; }
+
+.stepNumber {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--copper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--copper);
+  margin-bottom: 2rem;
+  background: var(--dark);
+  position: relative;
+  z-index: 1;
+}
+
+.stepTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 0.8rem;
+}
+
+.stepDesc {
+  font-size: 0.72rem;
+  line-height: 1.7;
+  color: rgba(245,240,232,0.45);
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 900px) {
+  .process { padding: 5rem 2rem; }
+  .steps { grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .steps::before { display: none; }
+  .step { border-right: none; padding: 0; }
+}

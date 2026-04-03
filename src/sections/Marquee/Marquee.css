@@ -1,0 +1,33 @@
+.wrap {
+  background: var(--dark);
+  padding: 1rem 0;
+  overflow: hidden;
+  border-top: 1px solid var(--copper);
+  border-bottom: 1px solid var(--copper);
+}
+
+.track {
+  display: flex;
+  gap: 3rem;
+  animation: marquee 28s linear infinite;
+  white-space: nowrap;
+}
+
+.item {
+  font-size: 0.68rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--copper);
+  flex-shrink: 0;
+}
+
+.dot {
+  color: var(--rust);
+  margin: 0 0.5rem;
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}

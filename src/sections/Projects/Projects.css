@@ -1,0 +1,128 @@
+.projects {
+  padding: 8rem 4rem;
+  background: var(--cream);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.projects .title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 4vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.0;
+  color: var(--dark);
+}
+
+.projects .title em {
+  font-style: italic;
+  color: var(--copper);
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+}
+
+.grid .cardProject {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 400px;
+}
+
+.grid .featured {
+  grid-row: 1 / 3;
+}
+
+.grid .img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  transition: transform 0.6s ease, filter 0.4s ease;
+  filter: sepia(20%) contrast(1.1);
+  display: block;
+}
+
+
+.grid .featured .img {
+  min-height: 560px;
+} 
+
+.cardProject:hover .img {
+  transform: scale(1.05);
+  filter: sepia(5%) contrast(1.0);
+}
+
+.grid .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26, 22, 18, 0.92) 0%, transparent 55%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  transition: opacity 0.3s;
+}
+
+.category {
+  font-size: 0.62rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 0.4rem;
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 0.3rem;
+}
+
+.featured .name {
+  font-size: 1.8rem;
+}
+
+.detail {
+  font-size: 0.68rem;
+  color: rgba(245, 240, 232, 0.5);
+  letter-spacing: 0.08em;
+}
+
+.tag {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: var(--copper);
+  color: var(--cream);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+}
+
+@media (max-width: 900px) {
+  .projects {
+    padding: 5rem 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured {
+    grid-row: auto;
+  }
+}
