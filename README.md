@@ -1,16 +1,43 @@
-# React + Vite
+# 🏗️ Rafael_Engenheiro — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page desenvolvida para apresentação do portfólio profissional de um engenheiro civil, com foco em projetos estruturais e obras relevantes.
 
-Currently, two official plugins are available:
+## ✨ Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este projeto consiste na criação de uma interface moderna e minimalista para destacar projetos de engenharia, transmitindo credibilidade, organização e autoridade profissional.
 
-## React Compiler
+A proposta visual utiliza:
+- Tipografia elegante
+- Paleta de cores sóbria (cream, dark e copper)
+- Layout em grid responsivo
+- Destaque para projetos principais
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧱 Funcionalidades
 
-## Expanding the ESLint configuration
+- Exibição de projetos em grid dinâmico
+- Cards com efeito hover (zoom + overlay)
+- Projeto em destaque (featured)
+- Layout totalmente responsivo
+- Design moderno e profissional
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologias utilizadas
+
+- React
+- CSS3 (Grid + Flexbox)
+- JavaScript (ES6+)
+
+## 📱 Responsividade
+
+O layout foi desenvolvido para funcionar perfeitamente em:
+- Desktop
+- Tablet
+- Mobile
+
+## 🎯 Objetivo
+
+Criar uma apresentação visual impactante para portfólio de engenharia, valorizando os projetos e facilitando a navegação do usuário.
+
+## 🚀 Status do projeto
+
+✅ Em desenvolvimento / finalizado (ajuste conforme necessário)
+
