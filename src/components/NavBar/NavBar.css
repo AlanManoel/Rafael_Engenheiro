@@ -1,93 +1,68 @@
 .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 4rem;
-    background: rgba(245, 240, 232, 0.85);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--line);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background: rgba(245, 240, 232, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
 }
 
 .nav .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    color: var(--dark);
-    text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--dark);
+  text-decoration: none;
 }
 
 .logo span {
-    color: var(--copper);
+  color: var(--copper);
 }
 
 .links {
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
 }
 
 .nav .links a {
-    font-size: 0.72rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--brown);
-    text-decoration: none;
-    transition: color 0.2s;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brown);
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 .links a:hover {
-    color: var(--copper);
+  color: var(--copper);
 }
 
 .navCta {
-    padding: 0.6rem 1.5rem !important;
-    font-size: 0.65rem !important;
+  padding: 0.6rem 1.5rem !important;
+  font-size: 0.65rem !important;
 }
 
 @media (max-width: 900px) {
-    .nav {
-        padding: 1.2rem 2rem;
-    }
-
-    .links {
-        display: none;
-    }
-}
-
-/* Celulares */
-@media (max-width: 600px) {
   .nav {
-    padding: 1rem 1.2rem;
+    padding: 1.2rem 2rem;
   }
 
-  .nav .logo {
-    font-size: 1rem;
-  }
-
-  .navCta {
-    padding: 0.45rem 1rem !important;
-    font-size: 0.55rem !important;
+  .links {
+    display: none;
   }
 }
 
-/* Telas muito pequenas */
-@media (max-width: 400px) {
+
+@media (max-width: 500px) {
   .nav {
-    padding: 0.8rem 0.8rem;
-  }
-
-  .nav .logo {
-    font-size: 0.9rem;
-  }
-
-  .navCta {
-    padding: 0.4rem 0.8rem !important;
-    font-size: 0.5rem !important;
+    padding: 0.56rem 1rem;
   }
 }
