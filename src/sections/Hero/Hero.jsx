@@ -35,7 +35,7 @@ function Hero() {
             <div className={'heroRight'}>
                 <div className={'imageWrapper'}>
                     <div />
-                    <img src="src/assets/perfil.webp" alt="Perfil Profissional" />
+                    <img src="perfil.png" alt="Perfil Profissional" />
 
                     <div className={'stats'}>
                         {stats.map((s) => (
