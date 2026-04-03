@@ -38,7 +38,9 @@
   color: var(--concrete);
 }
 
-.author strong { color: var(--dark); }
+.author strong {
+  color: var(--dark);
+}
 
 .dots {
   display: flex;
@@ -62,5 +64,65 @@
 }
 
 @media (max-width: 900px) {
-  .testimonials { padding: 5rem 2rem; }
+  .testimonials {
+    padding: 5rem 2rem;
+  }
+}
+
+
+/* Celulares */
+@media (max-width: 600px) {
+  .testimonials {
+    padding: 4rem 1.5rem;
+  }
+
+  .quote {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+
+  .quote::before {
+    font-size: 4rem;
+    top: -1rem;
+    left: -0.3rem;
+  }
+
+  .author {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+  }
+
+  .dots {
+    margin-top: 2rem;
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 400px) {
+  .testimonials {
+    padding: 3rem 1rem;
+  }
+
+  .quote {
+    font-size: 1.1rem;
+  }
+
+  .quote::before {
+    font-size: 3rem;
+    top: -0.5rem;
+  }
+
+  .author {
+    font-size: 0.6rem;
+  }
+
+  .dot {
+    width: 4px;
+    height: 4px;
+  }
 }

@@ -146,3 +146,84 @@
   .contact { grid-template-columns: 1fr; }
   .left, .right { padding: 4rem 2rem; }
 }
+
+/* Celulares */
+@media (max-width: 600px) {
+  .left,
+  .right {
+    padding: 3rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+
+  .infoItem {
+    font-size: 0.7rem;
+  }
+
+  .infoIcon {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 0.8rem;
+  }
+
+  .input,
+  .textarea {
+    font-size: 0.7rem;
+    padding: 0.7rem 0.8rem;
+  }
+
+  .submit {
+    font-size: 0.65rem;
+    padding: 0.85rem;
+  }
+
+  .left::after {
+    width: 10rem;
+    height: 10rem;
+    bottom: -3rem;
+    right: -3rem;
+  }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 400px) {
+  .left,
+  .right {
+    padding: 2.5rem 1rem;
+  }
+
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .intro {
+    font-size: 0.95rem;
+  }
+
+  .infoItem {
+    font-size: 0.65rem;
+  }
+
+  .input,
+  .textarea {
+    font-size: 0.65rem;
+  }
+
+  .submit {
+    font-size: 0.6rem;
+    padding: 0.75rem;
+  }
+
+  .left::after {
+    width: 8rem;
+    height: 8rem;
+    bottom: -2rem;
+    right: -2rem;
+  }
+}

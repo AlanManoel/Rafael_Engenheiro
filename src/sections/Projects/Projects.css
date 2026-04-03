@@ -126,3 +126,89 @@
     grid-row: auto;
   }
 }
+
+
+/* Celulares */
+@media (max-width: 600px) {
+  .projects {
+    padding: 4rem 1.5rem;
+  }
+
+  .projects .title {
+    font-size: 2.2rem;
+  }
+
+  .grid {
+    gap: 1rem;
+  }
+
+  .grid .cardProject {
+    min-height: 260px;
+  }
+
+  .grid .img {
+    min-height: 260px;
+  }
+
+  .grid .overlay {
+    padding: 1.5rem;
+  }
+
+  .name {
+    font-size: 1.1rem;
+  }
+
+  .featured .name {
+    font-size: 1.3rem;
+  }
+
+  .detail {
+    font-size: 0.6rem;
+  }
+
+  .tag {
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.55rem;
+    padding: 0.25rem 0.6rem;
+  }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 400px) {
+  .projects {
+    padding: 3rem 1rem;
+  }
+
+  .projects .title {
+    font-size: 1.8rem;
+  }
+
+  .grid .cardProject {
+    min-height: 220px;
+  }
+
+  .grid .img {
+    min-height: 220px;
+  }
+
+  .grid .overlay {
+    padding: 1.2rem;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .featured .name {
+    font-size: 1.2rem;
+  }
+
+  .detail {
+    font-size: 0.55rem;
+  }
+
+  .tag {
+    font-size: 0.5rem;
+  }
+}

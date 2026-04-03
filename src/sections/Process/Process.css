@@ -88,3 +88,61 @@
   .steps::before { display: none; }
   .step { border-right: none; padding: 0; }
 }
+
+
+/* Celulares */
+@media (max-width: 600px) {
+  .process {
+    padding: 4rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .stepNumber {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.65rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .stepTitle {
+    font-size: 1rem;
+  }
+
+  .stepDesc {
+    font-size: 0.65rem;
+  }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 400px) {
+  .process {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .stepNumber {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 0.6rem;
+  }
+
+  .stepTitle {
+    font-size: 0.9rem;
+  }
+
+  .stepDesc {
+    font-size: 0.6rem;
+  }
+}
